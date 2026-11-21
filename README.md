@@ -77,4 +77,4 @@ El proyecto incluye un documento PDF con las tablas de variables, diagramas de f
 - Universidad: Universidad CENFOTEC
 - Curso: SOFT-01 - Principios de Programacion I
 - Fecha: Noviembre de 2026
-- Estado: En preparacion para entrega
+- Estado: Listo para entregar
