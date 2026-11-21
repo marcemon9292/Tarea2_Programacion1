@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram name="Ejercicio 1 - Temperatura" id="temp1">
+    <mxGraphModel dx="1328" dy="1213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;ellipse;" value="Inicio" vertex="1">
+          <mxGeometry height="45" width="120" x="410" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="read" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Leer temperatura_inicial&amp;#xa;temperatura_objetivo&amp;#xa;incremento" vertex="1">
+          <mxGeometry height="100" width="290" x="340" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;rounded=0;" value="temperatura_actual = temperatura_inicial&amp;#xa;ciclos = 0" vertex="1">
+          <mxGeometry height="65" width="290" x="325" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;rhombus;" value="temperatura_objetivo &amp;lt;= temperatura_inicial" vertex="1">
+          <mxGeometry height="100" width="240" x="350" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="err1" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Mostrar error: la temperatura objetivo&amp;#xa;debe ser mayor que la inicial" vertex="1">
+          <mxGeometry height="75" width="300" x="695" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;rhombus;" value="incremento &amp;lt;= 0" vertex="1">
+          <mxGeometry height="90" width="200" x="165" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="err2" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Mostrar error: el incremento&amp;#xa;debe ser mayor que cero" vertex="1">
+          <mxGeometry height="70" width="255" x="505" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Mostrar &quot;Datos validados.&amp;#xa;Iniciando el aumento de temperatura...&quot;" vertex="1">
+          <mxGeometry height="75" width="300" x="100" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;rhombus;" value="temperatura_actual &amp;lt; temperatura_objetivo" vertex="1">
+          <mxGeometry height="110" width="250" x="125" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="update" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;rounded=0;" value="temperatura_actual += incremento&amp;#xa;ciclos += 1" vertex="1">
+          <mxGeometry height="70" width="285" x="110" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="showcycle" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Mostrar ciclos, temperatura_actual" vertex="1">
+          <mxGeometry height="65" width="265" x="120" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="results" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;shape=parallelogram;perimeter=parallelogramPerimeter;" value="Mostrar temperatura_actual, ciclos&amp;#xa;(resultados finales)" vertex="1">
+          <mxGeometry height="70" width="300" x="480" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontFamily=Arial;fontSize=12;strokeWidth=1;ellipse;" value="Fin" vertex="1">
+          <mxGeometry height="45" width="120" x="570" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="read" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="err1" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d2" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="265" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="err2" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="valid" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="update" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="update" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="showcycle" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="showcycle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d3" value="Repetir">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="55" y="1060" />
+              <mxPoint x="55" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="results" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="results" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="err1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="385" />
+              <mxPoint x="1030" y="1162" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="err2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;endArrow=block;endFill=1;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="525" />
+              <mxPoint x="830" y="1162" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
