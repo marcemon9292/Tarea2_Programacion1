@@ -15,35 +15,18 @@ total_salidas = 0 #Contador de vehículos salieron.
 total_ingresos = 0 # Acumulador del dinero que se ha cobrado.
 
 # Menu principal
-while True: # mantiene el menú repitiéndose.
-    print('\n--- MENU DE ESTACIONAMIENTO ---') # salto de línea \(*new line*\). Sirve para dejar un espacio visual
+while True:
+    print('\n--- MENU DE ESTACIONAMIENTO ---')
     print('1. Registrar entrada de vehiculo')
     print('2. Registrar salida de vehiculo')
-    print('3. Consultar estado del estacionamiento')
-    print('4. Salir')
+    print('3. Consultar ocupacion')
+    print('4. Consultar recaudacion')
+    print('5. Salir')
 
     opcion = input('Seleccione una opcion: ')
 
     match opcion:
-        case '1':
-            print('Registrar entrada')
-
-        case '2':
-            print('Registrar salida')
-
-        case '3':
-            print('Consultar estado')
-
-        case '4':
-            print('Finalizando el programa')
-            break
-
-        case _: #es el caso predeterminado. 
-            # Se ejecuta cuando ninguna de las opciones anteriores coincide.
-            print('Opcion no valida')
-
-# Caso 1 > Registrar entrada
-    match opcion:
+        # Caso 1: Registrar entrada
         case '1':
             if vehiculos_actuales < capacidad:
                 vehiculos_actuales += 1
@@ -53,8 +36,7 @@ while True: # mantiene el menú repitiéndose.
             else:
                 print('Estacionamiento sin espacio. No se permiten mas entradas')
 
-# Caso 2 > Registrar salida y cobrar
-
+        # Caso 2: Registrar salida y cobrar
         case '2':
             if vehiculos_actuales > 0:
                 horas = int(input('Ingrese las horas facturadas: '))
@@ -73,11 +55,24 @@ while True: # mantiene el menú repitiéndose.
             else:
                 print('No hay vehiculos para registrar una salida')
 
-# Caso 3 > Consultar resultado
-
+        # Caso 3: Consultar ocupacion
         case '3':
             print(f'Vehiculos estacionados: {vehiculos_actuales}')
             print(f'Espacios disponibles: {capacidad - vehiculos_actuales}')
-            print(f'Total de entradas: {total_entradas}')
+
+        # Caso 4: Consultar recaudacion
+        case '4':
+            print(f'Total recaudado: ₡{total_ingresos}')
+            print(f'Total de vehiculos que han salido: {total_salidas}')
+
+        # Caso 5: Salir
+        case '5':
+            print('\n--- RESUMEN FINAL ---')
+            print(f'Vehiculos estacionados: {vehiculos_actuales}')
             print(f'Total de salidas: {total_salidas}')
-            print(f'total_ingresos1: ₡{recaudacion}')
+            print(f'Total recaudado: ₡{total_ingresos}')
+            print('Finalizando el programa')
+            break
+
+        case _:
+            print('Opcion no valida')
