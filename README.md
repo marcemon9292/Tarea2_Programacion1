@@ -46,6 +46,20 @@ Contiene cuatro ejercicios de programacion en Python y seis laboratorios realiza
 4. Ejecutar el programa utilizando Python.
 5. Seguir las instrucciones que aparecen en la terminal.
 
+## Ejecución desde la terminal
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Abrir una terminal.
+4. Ejecutar el programa deseado con Python.
+
+Ejemplo:
+
+python Ejercicios/ejercicio1_temperatura.py
+
+Los ejercicios se ejecutan de forma independiente y solicitan
+los datos necesarios mediante la consola.
+
 ## Estructura del proyecto
 
 Tarea2_Programacion1/
